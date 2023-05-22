@@ -1,0 +1,19 @@
+@startuml 演習3-4_オブジェクト図
+' left to right direction
+object "車" as car {
+- tires[4]
+}
+object "タイヤ1" as taire1 {
+- size
+}
+object "タイヤ2" as taire2 {
+- size
+}
+object "タイヤ3" as taire3 {
+- size
+}
+car  -- taire1
+taire1 -- taire2
+taire2 -- taire3
+
+@enduml

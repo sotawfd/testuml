@@ -1,0 +1,10 @@
+@startuml 演習3-4_クラス図
+left to right direction
+class "車" as car {
+- tires[タイヤ]
+}
+class "タイヤ" as taire {
+- size
+}
+car "1" --"*" taire
+@enduml

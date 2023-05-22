@@ -1,0 +1,20 @@
+@startuml 例題3-1_予約入力インターフェース
+class Word {
+---
++ enter():void
+}
+class Excel {
+---
++ enter():void
+}
+interface keyboard {
+' <<interface>>
+---
++ enter():void
+}
+keyboard <|.. Word
+keyboard <|.. Excel
+class User {
+}
+keyboard <-up- User:<< use >>
+@enduml

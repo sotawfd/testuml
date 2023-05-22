@@ -1,0 +1,25 @@
+@startuml 演習3-1_CL_雇用形態
+class 正社員 {
+- 社員ID
+- 社員名
+---
++ 社員ID設定（社員ID:int）:void
++ 社員ID取得（）:int
++ 社員名設定（社員名:String）:void
++ 社員名取得（）:String
+}
+class 契約社員 {
+- 契約期間:int
+---
++ 契約期間設定（契約期間:int）:void
++ 契約期間取得（）:int
+}
+class 派遣 {
+-時給:String
+---
++ 時給設定（時給:int）:void
++ 時給取得（）:int
+}
+正社員 <|--down- 派遣
+正社員 <|--down- 契約社員
+@enduml

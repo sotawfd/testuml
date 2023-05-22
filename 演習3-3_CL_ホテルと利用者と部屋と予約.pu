@@ -1,0 +1,23 @@
+@startuml
+' left to right direction
+class "利用者" as user {
+- 名前 
+- 住所 
+- 電話番号 
+}
+class "ホテル" as hotel {
+- 部屋
+}
+class "部屋" as room {
+- タイプ
+- 価格
+- キャンペーン価格
+}
+class "予約" as reserve {
+- チェックイン日
+- 滞在期間
+- 値段
+}
+hotel "1" *-- room
+user o-- room
+@enduml
