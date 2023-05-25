@@ -1,0 +1,17 @@
+@startuml 演習3-6_OBJ_資格取得のオブジェクト図
+object "<u>社員1:社員</u>" as takahashi {
+名前=高橋洋平  
+}
+object "<u>社員2:社員</u>" as higuchi {
+名前=樋口正之  
+}
+object "<u>資格</u>" as sikaku {
+名称=情報処理安全確保支援士
+}
+object "<u>資格</u>" as sikaku1 {
+名称=LinuC試験Level1
+}
+takahashi -- sikaku
+takahashi -- sikaku1
+higuchi -- sikaku
+@enduml
