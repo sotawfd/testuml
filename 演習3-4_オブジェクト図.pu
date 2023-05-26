@@ -1,16 +1,16 @@
 @startuml 演習3-4_オブジェクト図
 ' left to right direction
-object "車" as car {
-- tires[4]
+object "<u>車</u>" as car {
+タイヤ=4
 }
-object "タイヤ1" as taire1 {
-- size
+object "<u>タイヤ1</u>" as taire1 {
+サイズ
 }
-object "タイヤ2" as taire2 {
-- size
+object "<u>タイヤ2</u>" as taire2 {
+サイズ
 }
-object "タイヤ3" as taire3 {
-- size
+object "<u>タイヤ3</u>" as taire3 {
+サイズ
 }
 car  -- taire1
 taire1 -- taire2

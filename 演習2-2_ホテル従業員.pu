@@ -1,0 +1,8 @@
+@startuml 例題1
+left to right direction
+actor 経営者  #DDDDDD;line:black;line.bold;
+actor ホテル従業員  #DDDDDD;line:black;line.bold;
+rectangle ホテル {
+}
+経営者 --|> ホテル従業員
+@endum

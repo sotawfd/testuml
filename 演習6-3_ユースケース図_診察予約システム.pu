@@ -1,0 +1,18 @@
+@startuml 演習6-3_ユースケース図_診察予約システム
+left to right direction
+actor ユーザー as User
+actor 看護士 as Nurse
+
+rectangle 予約システム {
+  usecase メニュー
+  usecase 予約と確認
+  usecase あなたの順番
+  usecase 今の順番
+  
+  User --> メニュー
+  User --> 予約と確認
+  User --> あなたの順番
+  User --> 今の順番
+ 今の順番 <-- Nurse 
+}
+@enduml

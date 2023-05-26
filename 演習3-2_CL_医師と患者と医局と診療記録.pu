@@ -1,0 +1,39 @@
+@startuml 演習3-2_CL_医師と患者と医局と診療記録
+class 患者 {
+- 患者ID
+- 患者名
+- 診察記録
+---
++ 患者ID設定（患者ID:int）:void
++ 患者ID取得（）:int
++ 患者名設定（患者名:String）:void
++ 患者名取得（）:String
++ 診察記録設定（診察記録:String）:void
++ 診察記録取得（）:String
+}
+
+class 医師 {
+- 医師ID
+- 医師名
+- 医局名
+---
++ 医師ID設定（医師ID:int）:void
++ 医師ID取得（）:int
++ 医師名設定（医師名:String）:void
++ 医師名取得（）:String
++ 医局名設定（医局名:String）:void
++ 医局名取得（）:String
++ 診察する（患者）:void
+}
+
+class 医局 {
+- 医局名
+---
++ 医局名設定（医局名:String）:void
++ 医局名取得（）:String
+}
+
+
+医師 "1" -- "*" 医局
+患者 "1" -- "1" 医師 : 担当医 <
+@enduml

@@ -1,4 +1,4 @@
-@startuml
+@startuml 演習3-3_CL_ホテルと利用者と部屋と予約
 ' left to right direction
 class "利用者" as user {
 - 名前 

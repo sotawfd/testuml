@@ -1,0 +1,16 @@
+@startuml 図4-1
+hide footbox
+　　　'メッセージに自動で番号を降る '/
+autonumber
+     ' 厳密なUMLに準拠する '
+skinparam style strictuml
+Actor ":<u>客</u>" as custmer
+participant ":<u>フロア店員</u>" as clerk
+participant ":<u>料理人</u>" as cook
+activate  custmer
+    custmer -> clerk: ラーメンを注文する
+    activate input
+       
+deactivate control
+
+@enduml

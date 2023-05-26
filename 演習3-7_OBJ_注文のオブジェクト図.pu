@@ -1,0 +1,19 @@
+@startuml 演習3-7_OBJ_注文のオブジェクト図
+object "<u>重要顧客</u>" as important {  
+}
+object "<u>顧客:顧客1</u>" as guest1 {
+名前=高橋洋平  
+}
+object "<u>顧客:顧客2</u>" as guest2 {
+名称=高田理恵
+}
+object "<u>顧客:顧客3</u>" as guest3 {
+名称=大坪直之
+}
+object "<u>資格</u>" as sikaku1 {
+名称=LinuC試験Level1
+}
+takahashi -- sikaku
+takahashi -- sikaku1
+higuchi -- sikaku
+@enduml

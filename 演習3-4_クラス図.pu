@@ -4,7 +4,7 @@ class "車" as car {
 - tires[タイヤ]
 }
 class "タイヤ" as taire {
-- size
+- サイズ
 }
 car "1" --"*" taire
 @enduml
