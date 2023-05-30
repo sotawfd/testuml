@@ -1,0 +1,15 @@
+@startuml 7章練習_ACカレーライス
+title 7章練習_ACカレーライス
+start
+:米を研ぐ;
+fork
+:野菜を切る;
+:肉を切る;
+:野菜と肉を炒める;
+:水とルーを入れえて煮込む;
+fork again
+:ご飯を炊く;
+end fork
+:盛り付け;
+stop
+@enduml
