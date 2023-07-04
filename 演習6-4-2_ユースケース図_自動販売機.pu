@@ -1,0 +1,14 @@
+@startuml 演習6-4-2_ユースケース図_自動販売機
+left to right direction
+
+actor 客
+actor ベンダー
+rectangle 自動販売機{
+Client --> (商品選択)
+Client --> (お金投入)
+Client --> (商品購入)
+Client --> (お釣り受取)
+Vendor --> (商品補充)
+Vendor --> (金銭回収)
+}
+@enduml
