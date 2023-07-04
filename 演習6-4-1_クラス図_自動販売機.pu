@@ -1,0 +1,13 @@
+@startuml 演6-4-1_クラス図_自動販売機 
+class 自動販売機 {
+}
+
+class ボタン {
+}
+
+class 料金装置 {
+}
+
+class ベンダー装置 {
+}
+@enduml
